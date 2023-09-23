@@ -1,5 +1,85 @@
 const products = [
   {
+    id: "1111",
+    image: "images/products/WAAAAAAAAAA.jpeg",
+    name: "They don't know",
+    rating: {
+      stars: 3.5,
+      count: 2
+    },
+    priceCents: 499,
+    keywords: [
+      "despair",
+      "death",
+      "sad",
+      "pain"
+    ]
+  },
+  {
+    id: "1112",
+    image: "images/products/silly-angry-kitten.jpeg",
+    name: "Silly Little Angry Cat Plushie",
+    rating: {
+      stars: 5.0,
+      count: 9999
+    },
+    priceCents: 10000,
+    keywords: [
+      "angry",
+      "silly",
+      "toy",
+      "plush"
+    ]
+  },
+  {
+    id: "1113",
+    image: "images/products/goth-spike-guinea-pig-belt.jpeg",
+    name: "Goth Spike Belt for Guinea Pigs - 2 Pack",
+    rating: {
+      stars: 4.0,
+      count: 32
+    },
+    priceCents: 3000,
+    keywords: [
+      "pet",
+      "belt",
+      "goth",
+      "accesories"
+    ]
+  },
+  {
+    id: "1114",
+    image: "images/products/rehab.jpeg",
+    name: "Depressed Horse - Lifetime Warranty",
+    rating: {
+      stars: 1.0,
+      count: 52080
+    },
+    priceCents: 100,
+    keywords: [
+      "pet",
+      "belt",
+      "goth",
+      "accesories"
+    ]
+  },
+  {
+    id: "1115",
+    image: "images/products/silly-liitle-croc.jpeg",
+    name: "Silly Croc Desk Figurine",
+    rating: {
+      stars: 5.0,
+      count: 1312
+    },
+    priceCents: 4500,
+    keywords: [
+      "pet",
+      "belt",
+      "goth",
+      "accesories"
+    ]
+  },
+  {
     id: "e43638ce-6aa0-4b85-b27f-e1d07eb678c6",
     image: "images/products/athletic-cotton-socks-6-pairs.jpg",
     name: "Black and Gray Athletic Cotton Socks - 6 Pairs",
@@ -656,5 +736,5 @@ const products = [
       "apparel",
       "mens"
     ]
-  }
+  },
 ];
