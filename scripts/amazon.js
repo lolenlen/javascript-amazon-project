@@ -1,4 +1,4 @@
-import {cart} from '../data/cart.js';
+import {cart, addToCart} from '../data/cart.js';
 import { products } from '../data/products.js';
  
 let productsHTML = '';
@@ -59,53 +59,37 @@ products.forEach((product) => {
 document.querySelector('.js-products-grid').
 innerHTML = productsHTML;
 
+function updateCartQuantity(productId) {
+  let cartQuantity = 0;
+
+  cart.forEach((cartItem) => {
+    cartQuantity += cartItem.quantity;
+  });
+
+  document.querySelector('.js-cart-quantity').innerHTML = cartQuantity;
+
+  const addedMessage = document.querySelector(
+    `.js-added-to-cart-${productId}`
+  );
+
+
+  addedMessage.classList.add('added-to-cart-visible');
+
+ setTimeout(() => {addedMessage.classList.add('added-to-cart-visible'); }, 2000)
+
+  console.log(cartQuantity);
+  console.log(cart);
+}
+
+
 document.querySelectorAll('.js-add-to-cart')
   .forEach((button) => {
     button.addEventListener('click', () => {
       const productId = button.dataset.productId;
+      addToCart(productId);
+      updateCartQuantity(productId);
 
-      let matchingItem;
-
-      cart.forEach((item) => {
-        if (productId === item.productId) {
-          matchingItem = item;
-        };
-      });
-
-      const quantitySelector = 
-      document.querySelector(`.js-quantity-selector-${productId}`
-      );
-
-      const quantity = Number(quantitySelector.value);
-
-      if (matchingItem) {
-        matchingItem.quantity += quantity;
-      } else {
-        cart.push({
-          productId: productId,
-          quantity: quantity
-        });
-      };
-
-      let cartQuantity = 0;
-
-      cart.forEach((item) => {
-        cartQuantity += item.quantity;
-      });
-
-      document.querySelector('.js-cart-quantity').innerHTML = cartQuantity;
-
-      const addedMessage = document.querySelector(
-        `.js-added-to-cart-${productId}`
-      );
-
-
-      addedMessage.classList.add('added-to-cart-visible');
-
-     setTimeout(() => {addedMessage.classList.add('added-to-cart-visible'); }, 2000)
-
-      console.log(cartQuantity);
-      console.log(cart);
+     
     });
   });
 
