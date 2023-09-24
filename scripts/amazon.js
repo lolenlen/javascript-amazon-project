@@ -1,4 +1,4 @@
-
+import {cart} from '../data/cart.js';
 
 let productsHTML = '';
 
@@ -93,15 +93,19 @@ document.querySelectorAll('.js-add-to-cart')
       });
 
       document.querySelector('.js-cart-quantity').innerHTML = cartQuantity;
-      
+
       const addedMessage = document.querySelector(
         `.js-added-to-cart-${productId}`
       );
 
+
       addedMessage.classList.add('added-to-cart-visible');
+
+     setTimeout(() => {addedMessage.classList.add('added-to-cart-visible'); }, 2000)
 
       console.log(cartQuantity);
       console.log(cart);
     });
   });
+
 
