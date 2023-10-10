@@ -39,6 +39,7 @@
 
   .checkout-grid {
     grid-template-columns: 1fr;
+    
   }
 }
 
@@ -140,7 +141,7 @@
 }
 
 .delivery-option {
-  display: grid;
+  display: flex;
   grid-template-columns: 24px 1fr;
   margin-bottom: 12px;
   cursor: pointer;
