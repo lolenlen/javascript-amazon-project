@@ -6,6 +6,7 @@ import {formatCurrency} from "../scripts/utils/money.js";
 //2 types
 //1. basic test cases (like decimal)
 //2. edge cases - testing the limits of the data (like zero and round off)
+///spec = test
 
 console.log('test suite: formatCurrency')
 
