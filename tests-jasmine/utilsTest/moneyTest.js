@@ -1,4 +1,4 @@
-import {formatCurrency} from "../scripts/utils/money.js";
+import {formatCurrency} from "../../scripts/utils/money.js";
 
 
 //test cases = test ssituations
@@ -26,4 +26,6 @@ describe('test suite: formatCurrency', () => {
   it('rounds down to nearest hundredth', () => {
     expect(formatCurrency(2000.4)).toEqual('20.00');
   });
+  
 });
+
