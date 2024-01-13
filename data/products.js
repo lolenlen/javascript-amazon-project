@@ -1,3 +1,21 @@
+export function getProduct(productId) {
+  let matchingProduct;
+
+  console.log('Searching for product with ID:', productId);
+
+  products.forEach((product) => {
+    if (product.id === productId) {
+      matchingProduct = product;
+    }
+  });
+
+  console.log('Matching Product:', matchingProduct);
+
+  return matchingProduct;
+}
+
+
+
 export const products = [
   {
     id: "1111",
@@ -736,5 +754,6 @@ export const products = [
       "apparel",
       "mens"
     ]
-  },
+  }
 ];
+

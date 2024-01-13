@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="checkoutHTML">
   <head>
     <title>Checkout</title>
 
@@ -29,8 +29,8 @@
         </div>
 
         <div class="checkout-header-middle-section">
-          Checkout (<a class="return-to-home-link js-return-to-home-link"
-            href="amazon.html"> </a>)
+          Checkout (<a class="return-to-home-link js-return-to-home-link js-cart-quantity"
+          href="amazon.html"> 0</a>)
         </div>
 
         <div class="checkout-header-right-section">
@@ -43,49 +43,15 @@
       <div class="page-title">Review your order</div>
 
       <div class="checkout-grid">
-        <div class="js-order-summary order-summary">
+        <div class="order-summary js-order-summary">
+          
         </div>
 
-        <div class="payment-summary">
-          <div class="payment-summary-title">
-            Order Summary
-          </div>
-
-          <div class="payment-summary-row">
-            <div class="js-payment-summary-row">Items (0):</div>
-            <div class="payment-summary-money js-payment-summary-money">$0.00</div>
-          </div>
-
-          <div class="payment-summary-row">
-            <div>Shipping &amp; handling:</div>
-            <div class="payment-summary-money js-payment-summary-shipping">$0.00</div>
-          </div>
-
-          <div class="payment-summary-row subtotal-row">
-            <div>Total before tax:</div>
-            <div class="payment-summary-money js-payment-summary-beforeTax">$0.00</div>
-          </div>
-
-          <div class="payment-summary-row">
-            <div>Estimated tax (10%):</div>
-            <div class="payment-summary-money js-payment-summary-tax">$0.00</div> 
-          </div>
-
-          <div class="payment-summary-row total-row">
-            <div>Order total:</div>
-            <div class="payment-summary-money js-payment-summary-total">$0.00</div>
-          </div>
-
-          <button class="place-order-button button-primary">
-            Place your order
-          </button>
+        <div class="payment-summary js-payment-summary">
         </div>
       </div>
     </div>
 
-
-
-    <script type="module" src="scripts/checkout.js" ></script>
-
+    <script type="module" src="scripts/checkout.js"></script>
   </body>
 </html>
