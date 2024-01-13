@@ -29,8 +29,6 @@ export function addToCart(productId) {
   document.querySelector(`.js-quantity-selector-${productId}`
   );
 
-  const quantity = Number(quantitySelector.value);
-
   if (matchingItem) {
     matchingItem.quantity += 1;
   } else {

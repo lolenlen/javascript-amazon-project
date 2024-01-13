@@ -41,7 +41,7 @@ export const products = [
       stars: 5.0,
       count: 9999
     },
-    priceCents: 10000,
+    priceCents: 100005,
     keywords: [
       "angry",
       "silly",
