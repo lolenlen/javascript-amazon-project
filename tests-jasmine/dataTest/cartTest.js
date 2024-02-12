@@ -5,6 +5,8 @@ import { addToCart, loadFromStorage, cart } from "../../data/cart.js";
 //flaky test= test that sometimes passes. sometimes fails 
 //to solve this u need to use a =Mock=
 
+
+
 describe('test suite: addToCart', () => {
   it('adds an existing product to the cart', () => {
     spyOn(localStorage, 'setItem')
